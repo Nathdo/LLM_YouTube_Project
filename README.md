@@ -13,11 +13,8 @@ This project leverages the power of Large Language Models (LLMs) to extract, und
 
 ## Tech Stack
 
-- Python
 - OpenAI API
-- Pinecone (vector database)
 - YouTube Transcript API
-- LangChain (for orchestration)
 - Streamlit (for UI, if applicable)
 
 ## How It Works
