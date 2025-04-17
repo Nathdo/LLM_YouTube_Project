@@ -1,0 +1,9 @@
+python-dotenv
+beautifulsoup4
+requests
+openai
+ollama
+google-api-python-client
+numba
+streamlit
+matplotlib
