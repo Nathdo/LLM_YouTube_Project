@@ -77,7 +77,7 @@ def generate_summary(comments, language="English"):
         },
         {
             "role": "user",
-            "content": "\n".join(comments[:100])
+            "content": "\n".join(comments[:200])
         }
     ]
 
