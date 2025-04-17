@@ -2,6 +2,9 @@
 
 This project leverages the power of Large Language Models (LLMs) to extract, understand, and interact with the content of a YouTube video. By combining automatic transcription, smart text chunking, semantic embeddings, and vector search, it allows users to ask precise questions and receive accurate answers based solely on the video content.
 
+![App Preview](Streamlit_img.png)
+
+
 ## Features
 
 - YouTube video content extraction via URL
