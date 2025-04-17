@@ -13,7 +13,7 @@ warnings.filterwarnings("ignore")
 load_dotenv()
 
 OPENAI_API_KEY = os.getenv("OPENAI_KEY")
-YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY") or "AIzaSyCw7-2a_eI1tkh67lFaaFrjkcqs78Xd8Bg"
+YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
 
 if not OPENAI_API_KEY:
     st.error("OPENAI API key not found. Please set it in the .env file.")
@@ -31,7 +31,7 @@ def extract_video_id(youtube_url):
     except Exception:
         return None
 
-def scrape_comments(video_id, max_comments=100):
+def scrape_comments(video_id, max_comments=300):
     request = youtube.commentThreads().list(
         part="snippet",
         videoId=video_id,
@@ -77,7 +77,7 @@ def generate_summary(comments, language="English"):
         },
         {
             "role": "user",
-            "content": "\n".join(comments[:200])
+            "content": "\n".join(comments[:300])
         }
     ]
 
